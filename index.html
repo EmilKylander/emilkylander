@@ -430,6 +430,10 @@ var typed = new Typed('#whoami', options);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
+
+  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+}
 </script>
 
 	</body>
