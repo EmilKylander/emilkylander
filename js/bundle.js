@@ -3069,4 +3069,11 @@ $(document).ready(function(){
     });  
   });
 
-  
+  document.querySelector('#scroll-page-2').addEventListener('click', function() {
+    scroll_to_page('page2');
+  });
+
+
+  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  }
