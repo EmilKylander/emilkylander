@@ -27,3 +27,23 @@ function scroll_to_page(id) {
 
     location.href="#"+id;
 }
+
+$(document).ready(function(){
+    $('.quotes').slick();
+    $('#picture').css('visibility','visible').hide().fadeIn(700, function() {
+        $('.title').css('visibility','visible').hide().fadeIn(700, function() {
+            $('.description').css('visibility','visible').hide().fadeIn(700, function() {
+                var options = {
+      strings: ['$ nano introduktion.txt', "Jag är en 22-årig webbutvecklare i <b>Falköping</b>.<br>Jag gillar att arbeta inom frontend och backend för att konstruera moderna och välfungerande hemsidor."],
+      typeSpeed: 40
+    };
+    
+    var typed = new Typed('#whoami', options);
+            });
+        });
+    });  
+  });
+
+  document.querySelector('#scroll-page-2').addEventListener('click', function() {
+    scroll_to_page('page2');
+  })

@@ -118,6 +118,9 @@ button:hover {
     max-width: 1400px;
     margin: auto;
     padding: 60px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
 }
 
 
@@ -324,6 +327,15 @@ margin: auto;
     right: 10px;
 }
 
+.quotes-container {
+    display: flex;
+    position: relative;
+}
+
+.project-image {
+    height: 100px;
+}
+
 .project {
     display: flex;
     background-color: #FFF;
@@ -334,6 +346,7 @@ margin: auto;
     position: relative;
     margin: auto;
     margin-top: 25px;
+    border-radius: 15px;
 }
 
 
@@ -407,10 +420,9 @@ margin: auto;
 }
 
 .quote {
-    padding: 10px;
-    font-size: 30px;
-    color: #ECECEC;
-    margin: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .workplace {
@@ -513,6 +525,10 @@ z-index: 9;
     animation: marquee 15s linear infinite;
 }
 
+.display-flex {
+    display: flex
+}
+
 @keyframes marquee {
     0% {
       transform: translate(0, 0);
@@ -573,6 +589,11 @@ z-index: 9;
     display: flex;
 width: 300px;
 overflow: hidden;
+}
+
+.testamonials {
+    background-color: #042826;
+    padding: 65px 0 25px 0;
 }
 
 .rounded {
@@ -655,14 +676,16 @@ margin: auto;
         margin-right: auto;
     }
 
+
     .first-page__info {
         width: 100%;
     }
 
+
+
     .dashes-container {
         width: 30px;
         flex-direction: column;
-
     }
 
     .steps li {
@@ -721,6 +744,11 @@ flex-direction: column;
     margin: 50px;
     color: #FFF;
     font-size: 40px;
+}
+
+.dashes-container {
+    display: flex;
+    max-width: 1400px;
 }
 
 .fullpage-menu ul {
@@ -818,7 +846,9 @@ flex-wrap: wrap;
     text-align: left;
 }
 
-
+.position-relative {
+    position: relative;
+}
 
 .page-6 h1 {
     font-family: 'Kanit', sans-serif;
@@ -860,6 +890,8 @@ flex-wrap: wrap;
     .whoami {
         margin: 20px;
         text-align: left;
+        display: inline;
+        margin: 0;
     }
 
 
@@ -961,6 +993,26 @@ width: 90%;
 }
 
 
+
 .quote-name {
     color: #04C3B6;
+}
+
+.quotes {
+    width: 100%;
+}
+
+
+.dash-1 {
+    width:50px;
+    border-bottom: 3px solid #FFF;
+    min-width:50px;
+}
+
+.dash-2 {
+    width:30px;
+    border-bottom: 3px solid #FFF;
+    min-width:30px;
+    margin-left:20px;
+    margin-top:5px;
 }
