@@ -7,7 +7,8 @@
 	  <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Jag är en 22-årig webbutvecklare i Falköping. Jag gillar att arbeta inom frontend och backend för att konstruera moderna och välfungerande hemsidor.">
-   </head>
+	  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet"> 
+	</head>
    <body>
       <div class="hidden fullpage-menu" id="fullpage-menu">
          <ul>
@@ -20,7 +21,9 @@
             <li><a href="tel://+46761849144" class="menu-item">+46761849144</a></li>
             <li><a href="/en"><img src="/img/english.png" alt="English flag" width="40" height="20"></a></li>
          </ul>
-         <a href="javascript:;" id="exit-menu"><i class="fas fa-times exit"></i></a>
+         <a href="javascript:;" id="exit-menu" class="exit-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="34px" height="34px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+         </a>
       </div>
       <div id="container" class="container">
       <a href="javascript:;" id="menu" class="menu-icon">
@@ -151,8 +154,7 @@
          </ul>
       </div>
       <div class="page-3" id="page3">
-         <img class="what-i-know-img" alt="What I know Bitmoji" src="https://sdk.bitmoji.com/render/panel/5bcf13d4-2c03-46c3-9e51-677a97d9571b-4b53a47b-384b-4818-8f0e-3e0f7d80a547-v1.png?transparent=1&palette=1">
-         <h1 class="what-i-know-title">Vad jag kan</h1>
+         <h1 class="what-i-know-title">Färdigheter</h1>
          <div class="techs">
             <div class="tech-overlay"></div>
             <div class="tech">
@@ -161,7 +163,7 @@
             </div>
             <div class="tech">
                <i class="sprite sprite-google-cloud"></i>
-               <p>Google Cloud</p>
+               <p>GCP</p>
             </div>
             <div class="tech">
                <i class="sprite sprite-html5"></i>
@@ -256,8 +258,8 @@
             </div>
          </div>
          <div class="page-5">
-            <img alt="Founder bitmoji" src="https://sdk.bitmoji.com/render/panel/80449733-5883-4546-98ef-8c56880403de-4b53a47b-384b-4818-8f0e-3e0f7d80a547-v1.png?transparent=1&palette=1">
-            <h1 class="page-5-text">Vad jag har gjort</h1>
+			<h1 class="wpage-5-text">Portfolio</h1>
+
             <div>
                <div>
                   <div class="project">
@@ -289,8 +291,7 @@
                   <img alt="Kroppsterapeuterna logo" src="/img/kroppsterapeuterna.png">
                   <div>
                      <h3>Kroppsterapeuterna</h3>
-                     <p>Under min anställning på The Farm Interactive har jag varit projektledare av skapandet för en ny hemsida för Kroppsterapeuterna.
-                        Detta inkluderade att prata med en designer, utveckla hemsidan och överföra information från den gamla hemsidan.
+                     <p>Jag var projektledare och utvecklade frontend och backend för friskvårdens största branschorganisation <i>kroppsterapeuterna.se</i>
                      </p>
                   </div>
                </div>
