@@ -928,7 +928,10 @@ flex-wrap: wrap;
     text-align: left;
     transition-timing-function: ease-in;
     transition: 0.2s;
+}
 
+.page-5-text {
+    margin-top: 100px;
 }
 
 .footer-link:hover {
