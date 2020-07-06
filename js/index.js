@@ -30,7 +30,6 @@ function scroll_to_page(id) {
 
 $(document).ready(function(){
     $('.quotes').slick();
-    $('#picture').css('visibility','visible').hide().fadeIn(700, function() {
         $('.title').css('visibility','visible').hide().fadeIn(700, function() {
             $('.description').css('visibility','visible').hide().fadeIn(700, function() {
                 var options = {
@@ -41,7 +40,6 @@ $(document).ready(function(){
     var typed = new Typed('#whoami', options);
             });
         });
-    });  
   });
 
   /*if (location.protocol !== 'https:') {
