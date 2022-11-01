@@ -2,15 +2,9 @@
 <html lang="en">
 	<head>
 		<title>Emil Kylander</title>
-		<link href="../css/index.css?ver=5" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-		<link href="../css/cube.css" rel="stylesheet">
-		<link href="../css/sprite.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400&display=swap" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-		<link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="../js/slick/slick-theme.css"/>
+		<link href="../css/bundle.css?ver=7" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet"> 
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="I'm a 22-year-old web developer in Falköping. I like to work with frontend and backend to create modern and well functioning websites.">
@@ -28,21 +22,23 @@
                                 <li><a href="/"><img src="../img/swedish.png" width="40" height="20"></a></li>
 
 			</ul>
-
-			<a href="javascript:;" id="exit-menu"><i class="fas fa-times exit"></i></a>
+			<a href="javascript:;" id="exit-menu" class="exit-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="34px" height="34px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+			 </a>
 		</div>
 		<div id="container" class="container">
-			<a href="javascript:void(0);" id="menu" class="menu-icon">
-				<div style="width:50px;border-bottom: 3px solid #FFF;min-width:50px;"></div>
-				<div style="width:30px;border-bottom: 3px solid #FFF;min-width:30px;margin-left:20px;margin-top:5px;"></div>
-			</a>
+			<a href="javascript:;" id="menu" class="menu-icon">
+				<div class="dash-1"></div>
+				<div class="dash-2"></div>
+			 </a>
 		<div class="first-page">
 			<ul class="front-menu">
 				<li><a href="#" class="active">Welcome</a></li>
 				<li><a href="#page2">What I know</a></li>
 				<li><a href="#page3">Technologies</a></li>
 				<li><a href="#page5">Portfolio</a></li>
-                                <li><a href="https://blogg.emilkylander.se">Blog</a></li>
+				<li><a href="#media">Media</a></li>
+
                                 <li><a href="/"><img src="../img/swedish.png" width="40" height="20"></a></li>
 
 			</ul>
@@ -54,8 +50,11 @@
 
 					<div class="first-page__info">
 						<h1 class="title">Emil Kylander</h1>
-						<p class="description"><i>“There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for”</i><br><br>
-						<div class="whoami_container">
+						<p class="description">I am a 24 year old security software developer in Sweden.<br />
+							I'm the founder of the search engine Celious, previously consultant for<br /> Electrolux,
+							Suzuki, and Electrolux. 
+						</p><br><br>
+						<div class="whoami_container" style="display: none !important">
 							<p id="whoami" class="whoami" style="display: inline;margin: 0;"></p>
 						</div>
 					</div>
@@ -193,7 +192,7 @@
 
 			<div class="tech">
 				<i class="sprite sprite-google-cloud"></i>
-				<p>Google Cloud</p>
+				<p>GCP</p>
 			</div>
 
 			<div class="tech">
@@ -272,6 +271,14 @@
 				<i class="sprite sprite-rabbitmq"></i>
 				<p>RabbitMQ</p>
 			</div>	
+            <div class="tech">
+				<img src="https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png">
+				<p>Scala</p>
+			 </div>
+			 <div class="tech">
+				<img src="https://avatars.githubusercontent.com/u/6128107?s=280&v=4">
+				<p>Vue</p>
+			 </div>
 		</div>
 		</div>
 		<div class="page-4" id="page4">
@@ -307,14 +314,23 @@
 			<img alt="Founder bitmoji" src="https://sdk.bitmoji.com/render/panel/80449733-5883-4546-98ef-8c56880403de-4b53a47b-384b-4818-8f0e-3e0f7d80a547-v1.png?transparent=1&palette=1">
 			<h1 class="page-5-text">Portfolio</h1>
 			<div>
+				<div>
+					<div class="project">
+					   <div>
+						  <h3>Accountec</h3>
+						  <p>I work as a Security Software Developer at Accountec since two years back.
+							During my time here I have created various different feature,
+							such as a GDPR-secure document archive, GDPR-secure ticket system, Kivra-integration,
+							overview for automation of K10-forms for accounting and much more.
+						  </p>
+					</div>
+				 </div>
 			<div>
 				<div class="project" style="border-radius: 15px;">
 					<img style="height: 100px;" alt="Celious logo" src="../img/celious.png">
 					<div>
 						<h3>Celious</h3>
-						<p>Under my free time I have developed a platform which scans Swedens websites in order to find websites which needs to be updated or improved.</p>
-						<p class="temp_disabled">Note: Temporarily offline</p>
-						</p>
+						<p>I'm founder of Celious - an open and free integrity friendly search engine for Swedish websites.</p>
 					</div>
 				</div>
 			</div>
@@ -356,13 +372,69 @@
 					</div>
 				</div>
 			</div>
-		</div>
+
+            <h1 class="page-5-text align-center">Övriga prestationer</h1>
+            <div>
+               <div class="project">
+                  <div>
+                     <h3>Offensive Security</h3>
+                     <p>I am certified with <b>Offensive Security Web Expert</b> (OSWE).
+                        This is an education with a high degree of difficulty where you 
+						get trained hands-on on how to attack web applications in a white box environment.
+						Graduated with top grades.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="project">
+                  <div>
+                     <h3>CVEs</h3>
+                     <p>I got four CVEs in my name (Documented and externally verified vulnerabilities).
+                        My latest CVE is identified with <b>CVE-2021-24964</b> and is a high severity 
+						vulnerability on Litespeed Cache which is in "Top 10 most installed Wordpress plugins" and
+						has 3,000,000 installations.
+
+                        <a class="styled-blue" href="https://wpscan.com/vulnerability/e9966b3e-2eb9-4d70-8c18-6a829b4827cc">LiteSpeed Cache &lt; 4.4.4 - IP Check Bypass to Unauthenticated Stored XSS</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="project">
+                  <div>
+                     <h3>OWASP</h3>
+                     <p>I'm a member of OWASP (The Open Web Application Security Project) för non-profit work.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div class="project">
+                  <div>
+                     <h3>Jericho</h3>
+                     <p>
+						I have developed an open-source prototype that builds a cluster in the cloud 
+						and looks for specified files in millions of websites.
+                     </p>
+					 <a class="styled-blue" href="https://github.com/EmilKylander/jericho">The Jericho - Scalable & Reliable Endpoint Scanning</a>
+
+					</div>
+               </div>
+            </div>
 		
+			<h1 class="page-5-text" id="media">Media</h1>
+
+			<a class="styled" href="https://www.falkopingstidning.se/2022-10-03/han-tar-upp-kampen-med-google---har-skapat-egen-sokmotor" target="_blank" class="text-blue-400 hover:text-blue-300" data-v-12b83a5c="">Falköpings Tidning - He takes up the fight with Google - has created his own search engine</a><br />
+			 <a class="styled" href="https://www.skovdenyheter.se/2022-10-03/emil-tar-upp-kampen-med-google--har-skapat-egen-sokmotor" target="_blank" class="text-blue-400 hover:text-blue-300" data-v-12b83a5c="">Skövde Nyheter - He takes up the fight with Google - has created his own search engine</a><br /><br />
+		  
+			 <p>Falköpings Radio</p>
+	
+		</div>
+		</div>
 		<div class="page-6">
 			<div>
 			<h1>Contact</h1>
-	
-		
 			<ul class="contact-footer">
 				<li><p><a class="footer-link" href="https://www.linkedin.com/in/emil-kylander-edwartz-546520b3/">Linkedin</a></p>
 				<li><p><a class="footer-link" href="https://twitter.com/emilkylander">Twitter</a></p></li>
@@ -376,51 +448,12 @@
 		</div>
 
 		<div class="page-7">
-			<p>Copyright 2020</p>
+			<p>&#169; Copyright 2022</p>
 		</div>
 
 </div>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="../js/slick/slick.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.quotes').slick();
-});
+<script src="../js/bundle.js?ver=8"></script>
 
-
-
-	$('.title').css('visibility','visible').hide().fadeIn(700, function() {
-		$('.description').css('visibility','visible').hide().fadeIn(700, function() {
-			var options = {
-  strings: ['$ nano introduction.txt', "I'm a 22-year-old web developer in <b>Falköping, Sweden</b>.<br>I like to work in frontend and backend to create modern and well functioning websites."],
-  typeSpeed: 40
-};
-
-var typed = new Typed('#whoami', options);
-		});
-	});
-
-
-
-
-
-</script>
-
-		<script src="../js/index.js" async></script>
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://matomo.celious.se/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
 
 	</body>
 </html>

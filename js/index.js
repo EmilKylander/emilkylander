@@ -33,7 +33,7 @@ $(document).ready(function(){
         $('.title').css('visibility','visible').hide().fadeIn(700, function() {
             $('.description').css('visibility','visible').hide().fadeIn(700, function() {
                 var options = {
-      strings: ['$ nano introduktion.txt', "Jag är en 22-årig webbutvecklare i <b>Falköping</b>.<br>Med erfarenhet av att utföra jobb åt <span class='light-blue'>Electrolux</span> och <span class='light-blue'>Suzuki</span> och vara projektledare för <span class='light-blue'>friskvårdens största branschorganisation</span> kan man lugnt säga att jag sätter passion i mitt arbete."],
+      strings: ['$ nano introduktion.txt', "Jag är en 24-årig webbutvecklare i <b>Falköping</b>.<br>Med erfarenhet av att utföra jobb åt <span class='light-blue'>Electrolux</span> och <span class='light-blue'>Suzuki</span> och vara projektledare för <span class='light-blue'>friskvårdens största branschorganisation</span> kan man lugnt säga att jag sätter passion i mitt arbete."],
       typeSpeed: 40
     };
     

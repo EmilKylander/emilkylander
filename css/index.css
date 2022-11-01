@@ -78,9 +78,8 @@ visibility: hidden;
 }
 
 .first-page ul li a {
-    color: #FFF;
     text-decoration: none;
-    color: #47494a;
+    color: #6278a8;
     transition-timing-function: ease-in;
     transition: 0.2s;
 }
@@ -1049,4 +1048,9 @@ width: 90%;
     min-width:30px;
     margin-left:20px;
     margin-top:5px;
+}
+
+.tech img {
+    width: 20px;
+    height: 20px;
 }
